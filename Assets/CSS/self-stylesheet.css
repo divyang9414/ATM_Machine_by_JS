@@ -1,0 +1,201 @@
+/* HEADER START */
+/* HEADER END */
+
+/* ASIDE-BAR START */
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #242424;
+}
+
+.main_box {
+    width: 600px;
+    height: 600px;
+    margin: 100px auto 0;
+    background-color: rgb(109, 116, 149);
+    border-radius: 12px;
+    box-shadow: 5px 10px 15px 5px #242424;
+}
+
+.inner_main_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    height: 600px;
+    margin: 100px auto 0;
+    background-color: rgb(109, 116, 149);
+    border-radius: 12px;
+    box-shadow: 5px 10px 15px 5px #242424;
+}
+
+.title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.usp11,
+.usp22 {
+    color: midnightblue;
+}
+
+.card {
+    width: 300px;
+    padding: 20px;
+    margin: auto;
+    border-radius: 10px;
+    background-color: #1e213a;
+    border-bottom: 4px solid #19d4ca;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.card1, .card2 {
+    width: 500px;
+    height: 350px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #1e213a;
+    border-bottom: 4px solid #19d4ca;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+.options div{
+    width: 150px;
+    margin: auto;
+}
+
+input {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: transparent;
+    border-bottom: 1px solid #ccc;
+    color: #fff;
+    outline: none;
+    transition: box-shadow 0.3s;
+    width: 100%;
+}
+
+#u_name, #u_pwd{
+    margin-bottom: 10px;
+}
+#u_pwd{
+    position: relative;
+}
+
+input:focus, button:focus {
+    box-shadow: 0 0 10px #929292;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    appearance: none;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+
+.login-button,
+.clear {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s, color 0.3s;
+    text-decoration: none;
+}
+
+.login-button {
+    background-color: transparent;
+    color: #19d4ca;
+}
+
+.login-button:hover {
+    background-color: #19d4ca;
+    color: #fff;
+    box-shadow: none;
+}
+
+.login-button:active {
+    box-shadow: 0 0 10px #19d4ca;
+}
+
+.clear {
+    color: #ccc;
+    background-color: transparent;
+}
+
+.clear:hover {
+    color: #fff;
+}
+
+.clear:active {
+    box-shadow: 0 0 10px #ccc;
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+#user_page,
+#withdrow_data,
+#deposite_data,
+#check_balance_data,
+#eye2,
+#min_bal_alert {
+    display: none;
+}
+
+.menus {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+    text-align: center;
+    border-radius: 12px 12px 0 0;
+}
+.eye{
+    position: absolute;
+    top: 85px;
+    right: 30px;
+    cursor: pointer;
+}
+#exit_btn{
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+.min_bal_alert_title{
+    color: chocolate;
+    margin-top: 20px;
+}
+#cencle_exit_btn{
+    width: 150px;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+#approve_exit_btn{
+    width: 150px;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+/* ASIDE-BAR END */
+
+/* MAIN START */
+/* MAIN BANNER END */
+
+/* ABOUT START */
+/* ABOUT END */
+
+/* TESTIMONIALS START START */
+/* TESTIMONIALS START END */
+
+/* FOOTER START */
+/* FOOTER END */

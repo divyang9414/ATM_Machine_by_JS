@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>KrishnaRaj_Bank</title>
+
+	<!-- META -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<data>
+		<!-- FANCY ICONS -->
+		<link rel="stylesheet" href="Assets/Fonts/Remixicon/remixicon.css">
+
+		<!-- BOOTSTRAP -->
+		<link rel="stylesheet" href="Assets/CSS/bootstrap.min.css">
+
+		<!-- MY-CSS -->
+		<link rel="stylesheet" href="Assets/CSS/self-stylesheet.css">
+	</data>
+</head>
+
+<body>
+	<main>
+		<!-- MAIN-BANNER START -->
+		<section id="main-banner" class="container-fluid">
+			<div class="container" id="login_page">
+				<div class="main_box">
+					<div class="h1 text-center pt-4 mb-5">KrishnaRaj Bank</div>
+					<div class="card">
+						<form>
+							<input id="u_name" type="number" placeholder="Acc. no. last 4 digits" />
+							<input id="u_pwd" type="password" placeholder="Password" />
+							<i id="eye1" onclick="show_pwd()" class="eye ri-eye-line text-white"></i>
+							<i id="eye2" onclick="hide_pwd()" class="eye ri-eye-off-line text-white"></i>
+							<div class="buttons">
+								<a href="javascript:void(0)" id="clear" onclick="do_clear()" class="clear">Clear</a>
+								<button type="button" onclick="login()" class="login-button">
+									Login
+								</button>
+							</div>
+						</form>
+					</div>
+					<div class="users-data mt-5">
+						<div class="text-center">
+							<span id="" class="usp11 h2 fs-5 d-inline-block text-start wp-100 ps-3">Acc. No.</span>
+							<span id="" class="usp22 h2 fs-5 d-inline-block text-start wp-100 ps-3">Password</span>
+						</div>
+						<div class="text-center">
+							<span id="u1" class="usp1 h2 fs-5 d-inline-block text-start wp-100 ps-3">1022</span>
+							<span id="p1" class="usp2 h2 fs-5 d-inline-block text-start wp-100 ps-3">= 2022</span>
+						</div>
+						<div class="text-center">
+							<span id="u2" class="usp1 h2 fs-5 d-inline-block text-start wp-100 ps-3">3476</span>
+							<span id="p2" class="usp2 h2 fs-5 d-inline-block text-start wp-100 ps-3">= 2023</span>
+						</div>
+						<div class="text-center">
+							<span id="u3" class="usp1 h2 fs-5 d-inline-block text-start wp-100 ps-3">9414</span>
+							<span id="p3" class="usp2 h2 fs-5 d-inline-block text-start wp-100 ps-3">= 2024</span>
+						</div>
+						<div class="text-center">
+							<span id="u4" class="usp1 h2 fs-5 d-inline-block text-start wp-100 ps-3">4121</span>
+							<span id="p4" class="usp2 h2 fs-5 d-inline-block text-start wp-100 ps-3">= 2025</span>
+						</div>
+						<div class="text-center">
+							<span id="u5" class="usp1 h2 fs-5 d-inline-block text-start wp-100 ps-3">1710</span>
+							<span id="p5" class="usp2 h2 fs-5 d-inline-block text-start wp-100 ps-3">= 2026</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="user_page">
+				<div class="inner_main_box">
+					<div class="card1">
+						<div class="fs-3 h2 text-white text-center pt-4 mb-5" id="owner_name">&nbsp</div>
+						<div class="options">
+							<div>
+								<button class="menus" type="button" onclick="withdrow()">Withdrow</button>
+							</div>
+							<div>
+								<button class="menus" type="button" onclick="deposite()">Deposite</button>
+							</div>
+							<div>
+								<button class="menus" type="button" onclick="check_balance()">Check Balance</button>
+							</div>
+							<div>
+								<button class="menus" type="button" onclick="main_exit()">Exit</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="withdrow_data">
+				<div class="inner_main_box">
+					<div class="card2">
+						<div class="fs-3 h2 text-white text-center pt-4 mb-5">Withdrow Money</div>
+						<div class="options">
+							<div><button class="menus" type="button">Enter Amount</button></div>
+							<div><input type="number" name="" id="debit_amt" placeholder="Type here"/></div>
+							<div>
+								<button id="exit_btn" onclick="withdrow_exit()">Done</button>
+							</div>
+						</div>
+						<div id="min_bal_alert" class="min_bal_alert text-center">
+							<div class="fs-5 min_bal_alert_title">Don't you want to keep even minimum balance..??</div>
+							<button id="cencle_exit_btn" onclick="cencle_exit()">Change Amount</button>
+							<button id="approve_exit_btn" onclick="approve_exit()">Continue</button>
+						</div>
+						<!-- <div id="min_bal_alert1" class="min_bal_alert1 text-center">
+							<div class="fs-5 min_bal_alert_title">Don't you want to keep even minimum balance..??</div>
+							<button id="cencle_exit_btn" onclick="cencle_exit()">Change Amount</button>
+							<button id="approve_exit_btn" onclick="approve_exit()">Continue</button>
+						</div> -->
+					</div>
+				</div>
+			</div>
+			<div id="deposite_data">
+				<div class="inner_main_box">
+					<div class="card2">
+						<div class="fs-3 h2 text-white text-center pt-4 mb-5">Deposite Money</div>
+						<div class="options">
+							<div><button class="menus" type="button">Enter Amount</button></div>
+							<div><input type="number" name="" id="credit_amt" placeholder="Type here"/></div>
+							<div><button id="exit_btn" onclick="deposite_exit()">Done</button></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="check_balance_data">
+				<div class="inner_main_box">
+					<div class="card2">
+						<div class="fs-3 h2 text-white text-center pt-4 mb-5">Bank Balance</div>
+						<div class="options">
+							<div>
+								<h2 id="show_bank_balance" class="fs-3 h2 text-white">&nbsp</h2>
+							</div>
+							<div><button id="exit_btn" onclick="check_balance_exit()">Exit</button></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- MAIN-BANNER END -->
+
+		<!-- J-SCRIPT  &  J-QUERY START -->
+		<data>
+			<script src="Assets/JavaScript/self-made-events.js"></script>
+		</data>
+		<!-- J-SCRIPT  &  J-QUERY END -->
+</body>
+
+</html>
